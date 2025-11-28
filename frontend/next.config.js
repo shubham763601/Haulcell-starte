@@ -1,7 +1,6 @@
-// /frontend/next.config.js
-/** @type {import('next').NextConfig} */
+ /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: { appDir: false }
-}
+  reactStrictMode: true
+};
+
 module.exports = nextConfig;
