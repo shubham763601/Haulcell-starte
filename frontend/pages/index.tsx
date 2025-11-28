@@ -6,7 +6,7 @@ import ProductCard from "../components/ProductCard";
 const fetcher = (url: string) => fetch(url).then(r => r.json());
 
 export default function Home() {
-  const apiBase = process.env.NEXT_PUBLIC_API_URL || //https://haulcell-starter.onrender.com/"";
+  const apiBase = process.env.NEXT_PUBLIC_API_URL || "https://your-backend.example.com";
   const { data, error } = useSWR(apiBase + "/api/products/", fetcher);
 
   return (
