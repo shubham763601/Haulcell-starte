@@ -1,7 +1,7 @@
 // /frontend/pages/index.tsx
 import React from "react";
 import useSWR from "swr";
-import ProductCard from "../components/ProductCard
+import ProductCard from "../components/ProductCard";
 
 const fetcher = (url: string) => fetch(url).then(r => r.json());
 
